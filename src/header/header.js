@@ -7,5 +7,5 @@ export default function Header() {
   
 
   
-  Logo and menu goes here</div>;
+  login icons here or search bar</div>;
 }
