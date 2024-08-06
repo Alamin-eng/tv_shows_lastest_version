@@ -3,6 +3,7 @@ import './hero.css';
 export default function Hero(){
   return(
     <div className='hero'>
+    <div className="tv-logo"> </div>
     <p>
           TV shows (React version)
         </p>

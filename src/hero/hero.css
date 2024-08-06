@@ -16,3 +16,11 @@
   background-blend-mode: overlay;
   
 }
+
+.tv-logo{
+  height: 125px;
+  width: 125px;
+  background-image: url("../assets/tv\ logo.png");
+  background-position: center;
+  background-size: contain;
+}
