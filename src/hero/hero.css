@@ -7,7 +7,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
- 
+  
   background-image: linear-gradient(to right, rgb(240, 12, 0) 1%, transparent 70%),
   url("../../public/wallpaper\ 1.jpg");
   background-position: center;
@@ -16,7 +16,14 @@
   background-blend-mode: overlay;
   
 }
-
+h1{
+  font-family: 'Getky trial';
+  letter-spacing: 5px;                                      
+}
+.App-link{
+  
+  font-family: 'Neko Neco', sans-serif;
+}
 .tv-logo{
   height: 125px;
   width: 125px;

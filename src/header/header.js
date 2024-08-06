@@ -5,7 +5,5 @@ export default function Header() {
   <div>  Navbar here</div>
   <div className="tv-logo"> </div>
   
-
-  
   login icons here or search bar</div>;
 }

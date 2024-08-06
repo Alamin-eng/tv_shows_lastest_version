@@ -4,6 +4,7 @@ export default function Hero(){
   return(
     <div className='hero'>
     <div className="tv-logo"> </div>
+    <h1>H1 HERE</h1>
     <p>
           TV shows (React version)
         </p>
