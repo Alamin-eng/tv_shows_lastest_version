@@ -2,24 +2,18 @@ import "./hero.css";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const images = [
-    "https://miro.medium.com/v2/resize:fit:1400/0*8muPGnvovN4Vruht",
-    "#141414",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkvFSSem2Z-fiOo0Xhb34ZJ9khasdBXWx1Kw0mVMnLByKBY5QahUiGA_zzQhuIuvR1hFo&usqp=CAU",
-    "#141414",
-    "https://play-lh.googleusercontent.com/8BkSt5nli4uDN_RGGB-7x2mQR8zMimPXr3-q47xMYpP1m4646LmW77IciYAbUFO4c7cx",
-  ];
+  
   const [counter, setCounter] = useState(0);
   const [backwardCounter, setBackwardCounter] = useState(10);
-  // photo index counter
+  // photo index counter(not in use at the moment)
   useEffect(() => {
     const timeout = setTimeout(() => {
       setCounter(counter + 1);
-    }, 2000);
+    }, 2500);
     return () => {
-      counter >= images.length ? setCounter(0) : clearTimeout(timeout);
+      clearTimeout(timeout);
     };
-  }, [counter, images.length]);
+  }, [counter]);
   // Backward counter
   useEffect(() => {
     const backtimeout = setTimeout(() => {
@@ -32,8 +26,8 @@ export default function Hero() {
 
   return (
     <div
-      className="hero"
-      style={{ backgroundImage: `url(${images[counter]})` }}
+      className="hero fade"
+      
     >
       <p>Download TV shows images and Fade background image transitions</p>
       <div>

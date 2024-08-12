@@ -6,28 +6,44 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
-
-  /* background-image: linear-gradient(
-      to right,
-      rgb(240, 12, 0) 1%,
-      transparent 70%
-    ),
-    url("../../public/wallpaper\ 1.jpg"); */
- 
   background-position: center;
-  background-size: 100vw 100vh;
+  background-size: 110vw 100vh;
   background-repeat: no-repeat;
-  background-blend-mode: overlay;
+  background-blend-mode: soft-light;
+}
+.fade {
+  animation: fade 25s infinite;
+  transition: ease;
+}
+
+@keyframes fade {
+  20% {
+    background-image: url("https://static1.colliderimages.com/wordpress/wp-content/uploads/2020/10/best-tv-shows-to-binge-watch-social.png");
+  }
+  
+  50% {
+    background-image: url("https://sm.mashable.com/mashable_me/photo/default/new-project_hn4u.jpg");
+  }
+
+  75% {
+    background-image: url("https://cdn.digitbin.com/wp-content/uploads/Free-TV-Show-Sites.jpeg");
+  }
+  75% {
+    background-size: 100vw 100vh;
+  }
+  100% {
+    background-image: url("https://i0.wp.com/thinkmonsters.com/speakinghuman/media/wp-content/uploads/GOAT-TV-Shows.jpeg?fit=1280%2C640&ssl=1");
+  }
+
 }
 .hero-description {
   width: 50vw;
 }
-.zoom{
-  position:absolute;
+.zoom {
+  position: absolute;
   top: 2px;
   left: 0;
   z-index: -1;
-  
 }
 h1 {
   font-family: "Getky trial";
