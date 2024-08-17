@@ -29,7 +29,7 @@ export default function Hero() {
       className="hero fade"
       
     >
-      <p>Download TV shows images and Fade background image transitions</p>
+      <p>Back images fixed but add half left to right shadow on images, also fix fix right sides text divs style</p>
       <div>
         <h1>SHOWS STARTING IN {backwardCounter}</h1>
       </div>
