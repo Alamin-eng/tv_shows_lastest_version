@@ -31,7 +31,7 @@ export default function Hero() {
     >
       <p>Back images fixed but add half left to right shadow on images, also fix fix right sides text divs style</p>
       <div>
-        <h1>SHOWS STARTING IN {backwardCounter}</h1>
+        <h1>SHOWS STARTING IN <span className="countdown">{backwardCounter}</span></h1>
       </div>
       <div> Enjoy your favourite classic TV shows full informtion here </div>
       <div className="hero-description">
