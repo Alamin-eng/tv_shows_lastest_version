@@ -29,7 +29,7 @@ export default function Hero() {
       className="hero fade"
       
     >
-      <p>Back images fixed but add half left to right shadow on images, countdown timer needs style, also fix fix right sides text divs style</p>
+      <p>Back images fixed but add half left to right shadow on images, countdown timer needs style, also fix right sides text divs style, it needs opacity left 0 to right 1</p>
       <div>
         <h1>SHOWS STARTING IN <span className="countdown">{backwardCounter}</span></h1>
       </div>
