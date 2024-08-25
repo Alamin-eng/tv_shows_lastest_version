@@ -1,8 +1,10 @@
 import "./hero.css";
 import { useEffect, useState } from "react";
+import { GooglePlayButton, AppStoreButton } from "react-mobile-app-button";
 
 export default function Hero() {
-  
+  const APKUrl = "https://play.google.com/store/apps/details?id=host";
+  const IOSUrl = "https://apps.apple.com/us/app/expo-go/id982107779";
   const [counter, setCounter] = useState(0);
   const [backwardCounter, setBackwardCounter] = useState(10);
   // photo index counter(not in use at the moment)
@@ -25,22 +27,44 @@ export default function Hero() {
   }, [backwardCounter]);
 
   return (
-    <div
-      className="hero fade"
+    <div className="hero fade">
       
-    >
-      <p>Back images fixed but add half left to right shadow on images, countdown timer needs style, also fix right sides text divs style, it needs opacity left 0 to right 1</p>
       <div>
-        <h1>SHOWS STARTING IN <span className="countdown">{backwardCounter}</span></h1>
+       
       </div>
-      <div> Enjoy your favourite classic TV shows full informtion here </div>
-      <div className="hero-description">
-        TV shows guide and information about your favourite classic shows.
-        Thanks to TV MUSE for the generous support of your public API.
+      <div className="hero-texts">
+        <div>
+          <h1> Classic TV shows </h1>
+          <span className="countdown">{backwardCounter}</span>
+        </div>
+        <div className="hero-description">
+          TV shows guide and information about your favourite classic shows.
+          Thanks to TV MUSE for the generous support of your public API.
+        </div>
+        <button className="button"> GET STARTED </button>
+        <div>Have a account? <a href="" className="account-link">Log in</a> </div>
+        <div className="app-store">
+        <GooglePlayButton
+          url={APKUrl}
+          theme={"dark"}
+          className={"custom-style"}
+        />
+        <AppStoreButton
+        url={IOSUrl}
+        theme={"dark"}
+        className={"custom-style"}
+      />
       </div>
-      <div> Get started Button here</div>
-      <div>Have a account? Log in </div>
-      <div>Google play and App store buttons</div>
+      </div>
     </div>
   );
 }
+
+// To do - 
+// re-style backward timer
+// set the links for everything
+// add left to right opacity of background so that the image on the right are brighter
+
+// <div>
+// SHOWS STARTING IN <span className="countdown">{backwardCounter}</span>
+// </div>

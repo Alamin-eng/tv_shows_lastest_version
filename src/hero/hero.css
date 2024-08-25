@@ -37,7 +37,7 @@
 
 }
 .hero-description {
-  width: 50vw;
+  max-width: 45vw;
 }
 .zoom {
   position: absolute;
@@ -46,9 +46,46 @@
   z-index: -1;
 }
 h1 {
-  font-family: "Getky trial";
-  letter-spacing: 5px;
-}
-.App-link {
   font-family: "Neko Neco", sans-serif;
+  letter-spacing: 2px;
+  width: 40%;
+  margin-bottom: 1%;
+  font-weight:lighter;
+}
+/* .App-link {
+  font-family: "Neko Neco", sans-serif;
+  font-family: "Getky trial";
+} */
+.hero-texts{
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: medium;
+  font-weight: bold;
+  padding:15px;
+  letter-spacing: 1px;
+  background-color: rgb(129, 52, 1);
+  max-width: 200px;
+  max-height: 50px;
+  outline: none;
+  border: none;
+  color:white
+}
+.account-link{
+  text-decoration: none;
+  color: rgb(179, 152, 0);
+  font-weight: bolder;
+  font-size: calc(1.2rem - .1rem)
+}
+.app-store{
+  display: flex;
+  gap: 10px;
 }
