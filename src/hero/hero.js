@@ -28,10 +28,7 @@ export default function Hero() {
 
   return (
     <div className="hero fade">
-      
-      <div>
-       
-      </div>
+      <div></div>
       <div className="hero-texts">
         <div>
           <h1> Classic TV shows </h1>
@@ -42,25 +39,30 @@ export default function Hero() {
           Thanks to TV MUSE for the generous support of your public API.
         </div>
         <button className="button"> GET STARTED </button>
-        <div>Have a account? <a href="" className="account-link">Log in</a> </div>
+        <div>
+          Have a account?
+          <a href="" className="account-link">
+            Log in
+          </a>
+        </div>
         <div className="app-store">
-        <GooglePlayButton
-          url={APKUrl}
-          theme={"dark"}
-          className={"custom-style"}
-        />
-        <AppStoreButton
-        url={IOSUrl}
-        theme={"dark"}
-        className={"custom-style"}
-      />
-      </div>
+          <GooglePlayButton
+            url={APKUrl}
+            theme={"dark"}
+            className={"custom-style"}
+          />
+          <AppStoreButton
+            url={IOSUrl}
+            theme={"dark"}
+            className={"custom-style"}
+          />
+        </div>
       </div>
     </div>
   );
 }
 
-// To do - 
+// To do -
 // re-style backward timer
 // set the links for everything
 // add left to right opacity of background so that the image on the right are brighter
