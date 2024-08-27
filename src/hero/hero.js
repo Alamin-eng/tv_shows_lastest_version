@@ -40,10 +40,10 @@ export default function Hero() {
         </div>
         <button className="button"> GET STARTED </button>
         <div>
-          Have a account?
+          Have a account?{" "}
           <a href="" className="account-link">
             Log in
-          </a>
+          </a>{" "}
         </div>
         <div className="app-store">
           <GooglePlayButton
@@ -62,11 +62,7 @@ export default function Hero() {
   );
 }
 
-// To do -
-// re-style backward timer
-// set the links for everything
-// add left to right opacity of background so that the image on the right are brighter
-// fix the background images on mobile device, images showing too narrow
+
 
 // <div>
 // SHOWS STARTING IN <span className="countdown">{backwardCounter}</span>
