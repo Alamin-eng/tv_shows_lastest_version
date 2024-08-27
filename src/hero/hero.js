@@ -28,10 +28,9 @@ export default function Hero() {
 
   return (
     <div className="hero fade">
-      <div></div>
       <div className="hero-texts">
         <div>
-          <h1> Classic TV shows </h1>
+          <h1> CLASSIC TV SHOWS </h1>
           <span className="countdown">{backwardCounter}</span>
         </div>
         <div className="hero-description">

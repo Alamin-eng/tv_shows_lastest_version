@@ -46,20 +46,23 @@
   z-index: -1;
 }
 h1 {
-  font-family: "Neko Neco", sans-serif;
-  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing:auto;
+  font-size: 3.75rem;
+  font-weight: 800;
+  font-style:normal;
+  letter-spacing: 1px;
   width: 40%;
   margin-bottom: 1%;
-  font-weight:lighter;
 }
 /* .App-link {
   font-family: "Neko Neco", sans-serif;
   font-family: "Getky trial";
 } */
 .hero-texts{
-  padding: 3% 10%;
+  padding: 5% 10%;
   display: flex;
-  
+  justify-content:center;
   flex-direction: column;
   gap: 25px;
 }
