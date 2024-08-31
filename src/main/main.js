@@ -26,15 +26,16 @@ export default function Main() {
               </div>
               </div>
               <div className="card-country">
-                {!show.network ? "data unavailable" : show.network.country.name}
+                {!show.network ? "country unavailable" : show.network.country.name}
               </div>
               <div className="card-genre-container">
-                <span className="card-genres">{show.genres[0]} </span>
-                <span className="card-genres">{show.genres[1]} </span>
-                <span className="card-genres">{show.genres[2]} </span>
+              {show.genres.map((genre) =>{
+                return(<span className="card-genres">{genre} </span>)
+              })}
+              
               </div>
               <div className="main-network">
-                {show.network && show.network.name}{" "}
+                {!show.network ? "Network unavailable" : show.network.name}{" "}
               </div>
             </div>
           </div>
