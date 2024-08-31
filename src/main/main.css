@@ -2,37 +2,70 @@
   --main-first-color: rgb(0, 114, 78);
   --main-text: rgb(0, 176, 120);
   --main-network: rgb(133, 0, 0);
+  --inner-text-color: rgb(255, 255, 255);
 }
 .main{
-  background-color: var(--main-first-color);
+  background-color: #a41900cc;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
-  
   padding: 5%;
-  gap: 5px;
+  gap: calc( 7px + 1px);
 }
 .main-card{
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: rgb(27, 28, 34);
-  width: 210px;
-  height: 300px;
+  max-width: 200px;
+  max-height: 350px;
+  border-radius: 20px;
+  font-weight: bold;
+
+}
+.main-card::before{
+  content: "";
+  background: linear-gradient(90deg, rgba(0,0,0,.25) 0%, rgba(132, 146, 249, 0.14) 50%, rgba(0,9,11,.25) 100%);
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   border-radius: 20px;
 }
-
 .card-image{
-  max-height: 180px;
-  max-width: 210px;
+  position: relative;
+  top:0;
+  max-height: 190px;
+  max-width: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 20px 20px 0 0;
 
 }
 .main-texts{
-  padding: 0 20px;
-  color: var(--main-text)
+  padding: 0 15px;
+  color: var(--main-text);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.name-and-rating-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+.card-country{
+  font-size:small;
+}
+.card-rating{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: max-content;
+  font-size: calc(1rem - .2rem);
 }
 .main-network{
   background-color: var(--main-network);
@@ -40,9 +73,28 @@
   padding: 4px 8px;
   font-size: .75rem;
   border-radius: 0 20px 0 20px;
-  color: rgb(218, 218, 218);
+  color: var(--inner-text-color);
   font-weight: bold;
   position: absolute;
   top:1px;
   right: 1px;
+}
+.card-genre-container{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap:8px;
+  margin-top: 4px;
+}
+.card-genres{
+  background-color: var(--main-first-color);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  border-radius: 8px;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding: 2px 5px;
+  font-size: calc(.75rem - .10rem);
+  color:var(--inner-text-color)
 }
