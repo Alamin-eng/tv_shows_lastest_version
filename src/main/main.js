@@ -19,15 +19,15 @@ export default function Main() {
   }
   return (
     <div className="main">
-      <h1>
+      <h1 key={"reset"}>
         <button className="reset-button" onClick={handleReset}>
           {" "}
           Reset{" "}
         </button>
       </h1>{" "}
-      {filter.map((show) => {
+      {filter.map((show, index) => {
         return (
-          <div className="main-card">
+          <div className="main-card" key={index}>
             <img
               className="card-image"
               src={`${
