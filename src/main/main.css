@@ -1,11 +1,11 @@
 :root{
   --main-first-color: rgb(0, 114, 78);
-  --main-text: rgb(0, 176, 120);
+  --main-text: rgb(255, 255, 255);
   --main-network: rgb(133, 0, 0);
   --inner-text-color: rgb(255, 255, 255);
 }
 .main{
-  background-color: #a41900cc;
+  background:-webkit-repeating-radial-gradient(rgb(100, 0, 25), rgb(0, 138, 138) ,rgb(0, 145, 155), rgb(118, 0, 168));
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
@@ -23,16 +23,17 @@
   border-radius: 20px;
   font-weight: bold;
   filter: drop-shadow(8px 7px 3px #1c0707);
+  z-index: 200;
 }
-/* .main-card::before{
+.main-card::before{
   content: "";
-  background: linear-gradient(90deg, rgba(0,0,0,.1) 0%, rgba(132, 146, 249, 0.16) 50%, rgba(0,0,0,.1) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,.1) 0%, rgba(21, 141, 201, 0.466) 50%, rgba(0,0,0,.1) 100%);
   position:absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: .3;
   border-radius: 20px;
-} */
+}
 .card-image{
   position: relative;
   top:0;
@@ -99,5 +100,6 @@
   padding: 3px 5px;
   margin: 1px 0;
   font-size: calc(.75rem - .10rem);
-  color:var(--inner-text-color)
+  color:var(--inner-text-color);
+  cursor: pointer;
 }
