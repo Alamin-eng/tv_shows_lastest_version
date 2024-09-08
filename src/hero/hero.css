@@ -84,7 +84,7 @@ h1 {
 }
 .account-link {
   text-decoration: none;
-  color: rgb(179, 152, 0);
+  color: rgba(158, 2, 255, 0.909);
   font-weight: bolder;
   font-size: calc(1.2rem - 0.1rem);
 }
