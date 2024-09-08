@@ -16,7 +16,7 @@ export default function Hero() {
       clearTimeout(timeout);
     };
   }, [counter]);
-  // Backward counter
+  // Backward counter (not in use at the moment)
   useEffect(() => {
     const backtimeout = setTimeout(() => {
       setBackwardCounter(backwardCounter - 1);
@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="hero-texts">
         <div>
           <h1> CLASSIC TV SHOWS </h1>
-          <span className="countdown">{backwardCounter}</span>
+          
         </div>
         <div className="hero-description">
           TV shows guide and information about your favourite classic shows.
@@ -61,7 +61,7 @@ export default function Hero() {
   );
 }
 
-
+//<span className="countdown">{backwardCounter}</span>
 
 // <div>
 // SHOWS STARTING IN <span className="countdown">{backwardCounter}</span>
