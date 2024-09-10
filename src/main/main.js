@@ -5,7 +5,6 @@ const data = require("../shows.json"); // code to fetch api data to replace thes
 
 export default function Main() {
   const [filter, setFilter] = useState(data);
- 
   //handle genres
   function handleGenre(event, getGenre) {
     let updateGenre = filter.filter(
@@ -19,12 +18,12 @@ export default function Main() {
   }
   return (
     <div className="main">
-      <h1 key={"reset"}>
-        <button className="reset-button" onClick={handleReset}>
+      
+        <button key={"reset"} className="reset-button" onClick={handleReset}>
           {" "}
           Reset{" "}
         </button>
-      </h1>{" "}
+      
       {filter.map((show, index) => {
         return (
           <div className="main-card" key={index}>
