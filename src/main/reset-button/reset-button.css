@@ -1,3 +1,5 @@
 .reset-button{
   outline:none;
+  width: calc(200px + 10px);
+  height: calc(100px + 5px)
 }
