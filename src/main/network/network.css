@@ -9,4 +9,9 @@
   position: absolute;
   top:0;
   right: 0;
+  outline: none;
+  border:none;
+  border-left: 2px solid rgba(190, 0, 22, 0.877);
+  border-right: 2px solid rgba(190, 0, 22, 0.877);
+  cursor: pointer;
 }
