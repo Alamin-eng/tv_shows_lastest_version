@@ -6,14 +6,8 @@ const data = require("../shows.json"); // code to fetch api data to replace thes
 
 export default function Main() {
   const [filter, setFilter] = useState(data);
-  //handle genres
-  // function handleGenre(event, getGenre) {
-  //   let updateGenre = filter.filter(
-  //     (genre) => genre.genres && genre.genres.includes(getGenre)
-  //   );
-  //   setFilter(updateGenre);
-  // }
-  // handle reset
+
+ // handle reset
   function handleReset() {
     setFilter(data);
   }
@@ -49,7 +43,8 @@ export default function Main() {
                   : show.network.country.name}
               </div>
               
-                  <Genre filter={data}/>
+              <Genre genre={show} setGenre={setFilter} originalData={filter}/>
+
               <div className="main-network">
                 {!show.network ? "Network unavailable" : show.network.name}{" "}
               </div>
@@ -60,14 +55,4 @@ export default function Main() {
     </div>
   );
 }
-
-// <div className="card-genre-container">
-//                 {show.genres.map((genre) => (
-//                   <button
-//                     className="card-genres"
-//                     onClick={(event) => handleGenre(event, genre)}
-//                   >
-//                     {genre}{" "}
-//                   </button>
-//                 ))}
-//               </div>
+  
