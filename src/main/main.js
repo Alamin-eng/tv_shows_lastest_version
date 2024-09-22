@@ -1,17 +1,18 @@
 import "./main.css";
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import Genre from "../genre/genre";
 const data = require("../shows.json"); // code to fetch api data to replace these static json data
 
 export default function Main() {
   const [filter, setFilter] = useState(data);
   //handle genres
-  function handleGenre(event, getGenre) {
-    let updateGenre = filter.filter(
-      (genre) => genre.genres && genre.genres.includes(getGenre)
-    );
-    setFilter(updateGenre);
-  }
+  // function handleGenre(event, getGenre) {
+  //   let updateGenre = filter.filter(
+  //     (genre) => genre.genres && genre.genres.includes(getGenre)
+  //   );
+  //   setFilter(updateGenre);
+  // }
   // handle reset
   function handleReset() {
     setFilter(data);
@@ -47,17 +48,8 @@ export default function Main() {
                   ? "country unavailable"
                   : show.network.country.name}
               </div>
-              <div className="card-genre-container">
-                {show.genres.map((genre) => (
-                  <button
-                    className="card-genres"
-                    onClick={(event) => handleGenre(event, genre)}
-                  >
-                    {genre}{" "}
-                  </button>
-                ))}
-              </div>
-
+              
+                  <Genre filter={data}/>
               <div className="main-network">
                 {!show.network ? "Network unavailable" : show.network.name}{" "}
               </div>
@@ -69,4 +61,13 @@ export default function Main() {
   );
 }
 
-
+// <div className="card-genre-container">
+//                 {show.genres.map((genre) => (
+//                   <button
+//                     className="card-genres"
+//                     onClick={(event) => handleGenre(event, genre)}
+//                   >
+//                     {genre}{" "}
+//                   </button>
+//                 ))}
+//               </div>

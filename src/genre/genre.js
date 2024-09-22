@@ -1,16 +1,19 @@
 import "./genre.css";
 
-export default function Genre({ props, handleClick }) {
+export default function Genre({ filter}) {
+  // function handleGenre(event, getGenre) {
+  //   let updateGenre = filter.filter(
+  //     (genre) => genre.genres && genre.genres.includes(getGenre)
+  //   );
+  //   setFilter(updateGenre);
+  // }
   return (
-    <div>
-      main genre needs to be break down in to separate function in here.
+    
       <div className="card-genre-container">
-        {props.genres.map((genre) => (
-          <button className="card-genres" onClick={handleClick}>
-            {genre}{" "}
-          </button>
-        ))}
+      
+       needs to fix genres
+        
       </div>
-    </div>
+  
   );
 }
