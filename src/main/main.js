@@ -2,6 +2,7 @@ import "./main.css";
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Genre from "./genre/genre";
+import Network from "./network/network";
 const data = require("../shows.json"); // code to fetch api data to replace these static json data
 
 export default function Main() {
@@ -33,7 +34,7 @@ export default function Main() {
               <div className="name-and-rating-container">
                 <div className="card-name">{show.name && show.name}</div>
                 <div className="card-rating">
-                  <FaStar color="yellow" fillOpacity={.9} />{" "}
+                  <FaStar color="orange" fillOpacity={1} />{" "}
                   <div>{show.rating && show.rating.average}</div>
                 </div>
               </div>
@@ -45,9 +46,7 @@ export default function Main() {
               
               <Genre genre={show} setGenre={setFilter} originalData={originalData}/>
 
-              <div className="main-network">
-                {!show.network ? "Network unavailable" : show.network.name}{" "}
-              </div>
+              <Network show={show} fileterShow={setFilter} originalData={originalData}/>
             </div>
           </div>
         );
@@ -55,4 +54,6 @@ export default function Main() {
     </div>
   );
 }
-  
+// <div className="main-network">
+// {!show.network ? "Network unavailable" : show.network.name}{" "}
+// </div>
