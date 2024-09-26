@@ -34,6 +34,6 @@ id's of the all weight 100 are: 5,56,59,60,67,81,83,103
 const premired = data.map((el) => el.premiered)
 const dateMonthYear = premired.map((el) => el.split("-").reverse())
 const replaceNameOfMonth = dateMonthYear.map((el) => {
-  return el[1].replace(/01/g,"January").replace(/02/g,"February").replace(/03/g,"March").replace(/04/g,"April").replace(/05/g,"May").replace(/06/g,"June").replace(/07/g,"July").replace(/08/g,"August").replace(/09/g,"September").replace(/10/g,"October").replace(/11/g,"November").replace(/12/g,"December")
+  return el[1].replace(/01/g,"Jan").replace(/02/g,"Feb").replace(/03/g,"Mar").replace(/04/g,"Apr").replace(/05/g,"May").replace(/06/g,"Jun").replace(/07/g,"Jul").replace(/08/g,"Aug").replace(/09/g,"Sep").replace(/10/g,"Oct").replace(/11/g,"Nov").replace(/12/g,"Dec")
 })
 console.log(replaceNameOfMonth) // date revesed and replaced name of the months
