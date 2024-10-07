@@ -32,7 +32,7 @@ export default function Main() {
               alt={`${show.name} original banner`}
             />
             <Country country={show} filterCountry={setFilter} originalData={originalData}/>
-            
+
             <div className="main-texts">
               <div className="name-and-rating-container">
                 <div className="card-name">{show.name && show.name}</div>
@@ -45,7 +45,7 @@ export default function Main() {
               
               <Genre genre={show} setGenre={setFilter} originalData={originalData}/>
 
-              <Network show={show} fileterShow={setFilter} originalData={originalData}/>
+              <Network show={show} fileterNetwork={setFilter} originalData={originalData}/>
             </div>
           </div>
         );

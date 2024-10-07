@@ -1,11 +1,11 @@
 import "./network.css";
 
-export default function Network({ show, fileterShow, originalData }) {
+export default function Network({ show, fileterNetwork, originalData }) {
   function handleNetwork(event, selectedNetwork) {
-    const updatedShows = originalData.filter(
+    const updatedNetworks = originalData.filter(
       (show) => show.network && show.network.name.includes(selectedNetwork)
     );
-    fileterShow(updatedShows);
+    fileterNetwork(updatedNetworks);
   }
   return (
     <button
