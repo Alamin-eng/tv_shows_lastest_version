@@ -30,6 +30,11 @@ export default function Main() {
               }`}
               alt={`${show.name} original banner`}
             />
+            <div className="card-country">
+                {!show.network
+                  ? "country unavailable"
+                  : show.network.country.code}
+              </div>
             <div className="main-texts">
               <div className="name-and-rating-container">
                 <div className="card-name">{show.name && show.name}</div>
@@ -38,11 +43,7 @@ export default function Main() {
                   <div>{show.rating && show.rating.average}</div>
                 </div>
               </div>
-              <div className="card-country">
-                {!show.network
-                  ? "country unavailable"
-                  : show.network.country.name}
-              </div>
+              
               
               <Genre genre={show} setGenre={setFilter} originalData={originalData}/>
 

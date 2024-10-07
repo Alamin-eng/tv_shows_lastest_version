@@ -58,8 +58,23 @@
   margin: 2px 0;
 }
 .card-country{
-  font-size:small;
+  background-color: rgba(65, 81, 168, 0.922);
+  width:fit-content;
+  padding: 4px 7px;
+  font-size: .75rem;
+  border-radius: 15px 0 15px 0;
+  color: rgb(159, 228, 255);
+  font-weight:bold;
+  position: absolute;
+  bottom:2px;
+  right: 0;
+  outline: none;
+  border:none;
+  border-left: 1px solid rgba(143, 95, 255, 0.922);
+  border-right: 1px solid rgba(143, 95, 255, 0.722);
+  cursor: pointer;
 }
+
 .card-rating{
   display: flex;
   align-items: center;
