@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Genre from "./genre/genre";
 import Network from "./network/network";
+import Country from "./country/country";
 const data = require("../shows.json"); // code to fetch api data to replace these static json data
 
 export default function Main() {
@@ -30,11 +31,8 @@ export default function Main() {
               }`}
               alt={`${show.name} original banner`}
             />
-            <div className="card-country">
-                {!show.network
-                  ? "country unavailable"
-                  : show.network.country.code}
-              </div>
+            <Country country={show} filterCountry={setFilter} originalData={originalData}/>
+            
             <div className="main-texts">
               <div className="name-and-rating-container">
                 <div className="card-name">{show.name && show.name}</div>

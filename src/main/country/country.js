@@ -1,7 +1,20 @@
-import "./county.css";
+import "./country.css";
 
-export default function Country({country, setCountry, originalData}){
+export default function Country({country, filterCountry, originalData}){
+  function handleCountry(event, selectedCountry) {
+    const updatedShows = originalData.filter(
+      (show) => show.network && show.network.country.code.includes(selectedCountry)
+    );
+    filterCountry(updatedShows);
+  }
   return(
-    <div>mains country goes here </div>
+    <button
+      className="card-country"
+      onClick={(event) => handleCountry(event, country.network.country.code)}
+    >
+    {!country.network
+      ? "country unavailable"
+      : country.network.country.code}{" "}
+    </button>
   )
 };
