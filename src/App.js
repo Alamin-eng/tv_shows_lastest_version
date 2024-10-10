@@ -1,6 +1,5 @@
 import "./App.css";
 import Hero from "./hero/hero";
-
 import Main from "./main/main";
 import Footer from "./footer/footer";
 function App() {

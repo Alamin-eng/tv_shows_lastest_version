@@ -24,20 +24,4 @@ export default function Genre({ genre, setGenre, originalData }) {
   );
 }
 
-//handle genres
-// function handleGenre(event, getGenre) {
-//   let updateGenre = filter.filter(
-//     (genre) => genre.genres && genre.genres.includes(getGenre)
-//   );
-//   setFilter(updateGenre);
-//   console.log(setFilter(updateGenre))
-// }
-// ORIGINAL MAIN GENRE COMPONENT
-// <div className="card-genre-container">
-//  {show.genres.map((genre) => (
-//   <button className="card-genres"
-//  onClick={(event) => handleGenre(event, genre)}>
-//  {genre}{" "}
-// </button>
-//  ))}
-//  </div>
+

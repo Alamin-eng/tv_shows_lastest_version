@@ -6,7 +6,8 @@
 // resize the card image with better height. DONE
 // style the card-texts nicely with spans then set the links for everything. add external link for each cards and remove country.
 // complete the project by 5th august
+// Make a separate component for country and add filter functionality. DONE
 
-// Make a separate component for country and add filter functionality
+// Need to fix responsiveness for main component
 // Add modal for each shows summary and useful info
 // Add a menu container at the top of main then add the following functionalities - reset, sort by ratings, sort by language, sort by name, sort by date, sort by Scripted or Reality

@@ -1,5 +1,5 @@
 import "./main.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Genre from "./genre/genre";
 import Network from "./network/network";
@@ -53,6 +53,3 @@ export default function Main() {
     </div>
   );
 }
-// <div className="main-network">
-// {!show.network ? "Network unavailable" : show.network.name}{" "}
-// </div>
