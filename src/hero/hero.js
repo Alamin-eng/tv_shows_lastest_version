@@ -40,9 +40,9 @@ export default function Hero() {
         <button className="button"> GET STARTED </button>
         <div>
           Have a account?{" "}
-          <a href="" className="account-link">
+          <button className="account-link">
             Log in
-          </a>{" "}
+          </button>{" "}
         </div>
         <div className="app-store">
           <GooglePlayButton
