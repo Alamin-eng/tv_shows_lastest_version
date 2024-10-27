@@ -12,6 +12,11 @@
   padding: 5%;
   gap: calc( 7px + 1px);
 }
+.main-card:hover{
+  transform: translate(0, -10px);
+  transition: ease .2s;
+  filter: drop-shadow(-8px -7px 3px #1c0707);
+}
 .main-card{
   position: relative;
   display: flex;
