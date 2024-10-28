@@ -15,7 +15,7 @@
 .main-card:hover{
   transform: translate(0, -10px);
   transition: ease .2s;
-  filter: drop-shadow(-8px -7px 3px #1c0707);
+  filter: drop-shadow(-8px -7px 3px #1c0707) contrast(110%) brightness(105%) saturate(1.5);
 }
 .main-card{
   position: relative;
