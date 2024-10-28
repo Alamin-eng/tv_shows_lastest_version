@@ -10,26 +10,27 @@ const filterUsingSetReturnsObjL = new Set([...language]) // prints object litera
 console.log(filterLanguageUsingIndexof, filterUsingSetReturnsObjL);
 /* Set(3) { 'English', 'Japanese', 'french' } */
 
+/*
 // --- how many types of type --- 
 const type = data.map((el) => el.type);
 const filterType = new Set([...type]);// prints object literal
 console.log(filterType);
-/* Set(5) {
+ Set(5) {
   'Scripted',
   'Reality',
   'Animation',
   'Talk Show',
   'Documentary'
-} */
+} 
+*/
 
-
+/*
 // --- how many types of weight --- 
 const weight = data.filter((el) => el.weight === 100).map((el) => el.id);
-
-console.log("id's of the all weight 100 are: " + weight)  */
+console.log("id's of the all weight 100 are: " + weight)  
 
 // id's of the all weight 100 are: 5,56,59,60,67,81,83,103
-
+*/
 
 /*
 // --- reverse the date of first aired and replace month for name of month --- 
@@ -47,8 +48,7 @@ const top10Weighted = data.sort((a, b) => a.weight && b.weight && a.weight > b.w
 console.log(top10Ratings) // shows top 10 high rated objects 
 console.log(top10Weighted) // shows top 10 high weighted objects 
 
-/*
+
 // How to find if a number (in this app rating.average) has no decimal
 const splitRatingsToTestLength = data.map((data) => data.rating.average).slice(1, 10);
 console.log(splitRatingsToTestLength.filter((el) => el % 1 === 0)); 
-*/
