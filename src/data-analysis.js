@@ -1,5 +1,6 @@
 const data = require("./shows.json")
 
+
 // --- how many types of language --- 
 const language = data.map((el) => el.language);
 // remove duplicates language  using filter and indexOf
@@ -8,7 +9,8 @@ const filterLanguageUsingIndexof = language.filter((value, index, array) => arra
 const filterUsingSet = [...new Set(language)]; // prints array 
 const filterUsingSetReturnsObjL = new Set([...language]) // prints object literal
 console.log(filterLanguageUsingIndexof, filterUsingSetReturnsObjL);
-/* Set(3) { 'English', 'Japanese', 'french' } */
+// Set(3) { 'English', 'Japanese', 'french' } 
+
 
 /*
 // --- how many types of type --- 
@@ -42,12 +44,13 @@ const replaceNameOfMonth = dateMonthYear.map((el) => {
 console.log(replaceNameOfMonth) // date revesed and replaced name of the months
 */
 
+/*
 // --- top 10 rated and weighted shows --- 
 const top10Ratings = data.sort((a, b) => a.rating && b.rating && a.rating.average > b.rating.average ? -1 : a.rating.average < b.rating.average ? 1 : 0).slice(1, 10)
 const top10Weighted = data.sort((a, b) => a.weight && b.weight && a.weight > b.weight ? -1 : a.weight < b.weight? 1 : 0).slice(1, 10)
 console.log(top10Ratings) // shows top 10 high rated objects 
 console.log(top10Weighted) // shows top 10 high weighted objects 
-
+*/
 
 // How to find if a number (in this app rating.average) has no decimal
 const splitRatingsToTestLength = data.map((data) => data.rating.average).slice(1, 10);

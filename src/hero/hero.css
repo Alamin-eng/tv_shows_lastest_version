@@ -92,6 +92,7 @@ h1 {
   background: transparent;
   max-width: 150px;
   min-height: auto;
+  cursor: pointer;
 }
 .app-store {
   display: flex;

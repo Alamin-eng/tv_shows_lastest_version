@@ -40,7 +40,7 @@ export default function Hero() {
         <button className="button"> GET STARTED </button>
         <div>
           Have a account?{" "}
-          <button className="account-link">
+          <button className="account-link" onClick={()=> alert("Log in under development")}>
             Log in
           </button>{" "}
         </div>
