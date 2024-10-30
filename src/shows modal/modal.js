@@ -1,6 +1,8 @@
+import "./modal.css";
+
 export default function Shows_modal(){
   return(
-    <div>
+    <div className="modal-container">
       <div> header (Title & run time div's)</div>
       <div>modal body
         <div>description</div>

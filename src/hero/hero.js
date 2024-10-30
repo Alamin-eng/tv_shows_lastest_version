@@ -2,6 +2,7 @@ import "./hero.css";
 import { useEffect, useState } from "react";
 import { GooglePlayButton, AppStoreButton } from "react-mobile-app-button";
 
+
 export default function Hero() {
   const APKUrl = "https://play.google.com/store/apps/details?id=host";
   const IOSUrl = "https://apps.apple.com/us/app/expo-go/id982107779";
@@ -31,18 +32,21 @@ export default function Hero() {
       <div className="hero-texts">
         <div>
           <h1> CLASSIC TV SHOWS </h1>
-          
-        </div>
-        <div className="hero-description">
+          </div>
+          <div className="hero-description">
           TV shows guide and information about your favourite classic shows.
           Thanks to TV MUSE for the generous support of your public API.
-        </div>
-        <button className="button"> GET STARTED </button>
-        <div>
+          </div>
+          <button className="button"> GET STARTED </button>
+          <div>
           Have a account?{" "}
-          <button className="account-link" onClick={()=> alert("Log in under development")}>
+          <button
+            className="account-link"
+            onClick={() => alert("Log in under development")}
+          >
             Log in
           </button>{" "}
+          
         </div>
         <div className="app-store">
           <GooglePlayButton
