@@ -1,5 +1,12 @@
 import "./footer.css";
 
 export default function Footer() {
-  return <div className="footer">Footer goes here</div>;
+  const year = new Date().getFullYear();
+    return (
+      <div className="footer">
+        <div>Copyright © {year} Created with ❤️️ by Mohammad Alamin</div>
+        
+        <div> All trademarks are property of their respective owners</div>
+      </div>
+    );
 }
