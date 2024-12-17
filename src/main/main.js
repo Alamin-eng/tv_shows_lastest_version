@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 import Genre from "./genre/genre";
 import Network from "./network/network";
 import Country from "./country/country";
+import ResetButton from "./reset-button/reset-button";
 const data = require("../shows.json"); // code to fetch api data to replace these static json data
 
 export default function Main() {
@@ -16,10 +17,7 @@ export default function Main() {
   return (
     <div className="main">
       
-        <button key={"reset"} className="reset-button" onClick={handleReset}>
-          {" "}
-          Reset{" "}
-        </button>
+        <ResetButton handleReset={handleReset} />
       
       {filter.map((show, index) => {
         return (

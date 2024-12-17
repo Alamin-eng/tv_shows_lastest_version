@@ -1,5 +1,14 @@
 .reset-button{
   outline:none;
-  width: calc(200px + 10px);
-  height: calc(100px + 5px)
+  width: calc(100px + 10px);
+  height: calc(50px + 5px);
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+  transition: color, background .5s ease-out;
+}
+.reset-button:hover{
+  color: white;
+  background: rgb(179, 78, 0);
 }

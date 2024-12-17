@@ -1,9 +1,14 @@
-import "./reset.css";
+import "./reset-button.css";
 
-export default function ResetButton({ props, handleClick }) {
+export default function ResetButton({ handleReset}) {
+ 
   return (
+
     <div>
-      main reset button needs to be break down in to separate function in here.
+    <button key={"reset"} className="reset-button" onClick={handleReset}>
+    {" "}
+    Reset{" "}
+  </button>
       
     </div>
   );
