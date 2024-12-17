@@ -10,5 +10,5 @@
 
 // Need to fix responsiveness for main component
 // Add modal for each shows summary and useful info, with title, date of release, duration, country, genre and summary etc. (not sattle)
-// Add a menu container at the top of main then add the following functionalities - reset, sort by ratings, sort by language, sort by name, sort by date, sort by Scripted or Reality
+// Add a menu container at the top of main then add the following functionalities - reset, sort by ratings(top rated), sort by language, sort by name (alphabetical), sort by date(release date), sort by Scripted or Reality(scripted)
 // add on click event to show each shows season and episode
