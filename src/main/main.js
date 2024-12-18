@@ -15,9 +15,12 @@ export default function Main() {
     setFilter(data);
   }
   return (
+    <div className="main-container">
+   
+    <ScrollBar handleReset={handleReset} />
     <div className="main">
       
-        <ScrollBar handleReset={handleReset} />
+        
       
       {filter.map((show, index) => {
         return (
@@ -47,6 +50,7 @@ export default function Main() {
           </div>
         );
       })}{" "}
+    </div>
     </div>
   );
 }

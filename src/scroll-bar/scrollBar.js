@@ -6,7 +6,7 @@ export default function ScrollBar({ handleReset}) {
 
     <div className="scroll-bar">
       <ResetButton handleReset={handleReset} />
-      
+      <ResetButton handleReset={handleReset} />
     </div>
   );
 }

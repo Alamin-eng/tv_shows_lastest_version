@@ -1,0 +1,20 @@
+.scroll-bar{
+  
+
+}
+.scroll-bar>*{
+  outline:none;
+  width: calc(100px + 10px);
+  height: calc(50px + 5px);
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+  transition: color, background .25s ease-in-out;
+}
+/* Notice how I used >* on className to select all direct children of a container, but not all recuresive children */
+
+.scroll-bar>*:hover{
+  color: white;
+  background: rgb(107, 0, 113);
+}
