@@ -6,6 +6,9 @@ export default function ScrollBar({ handleReset}) {
 
     <div className="scroll-bar">
       <ResetButton handleReset={handleReset} />
+      {/* replace all the following buttons with todo list buttons */}
+      <ResetButton handleReset={handleReset} />
+      <ResetButton handleReset={handleReset} />
       <ResetButton handleReset={handleReset} />
     </div>
   );

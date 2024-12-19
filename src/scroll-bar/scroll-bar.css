@@ -1,5 +1,7 @@
 .scroll-bar{
-  
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-evenly;
 
 }
 .scroll-bar>*{
