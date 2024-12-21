@@ -14,22 +14,29 @@ export default function Main() {
   function handleReset() {
     setFilter(data);
   }
+  // handle ratings
+  function handleRatings() {
+    const ratings = [...data].sort((a, b) => {
+      if (a.rating && b.rating) {
+        return b.rating.average - a.rating.average;
+      }
+      return 0;
+    });
+    setFilter(ratings);
+  };
+
   return (
     <div className="main-container">
    
-    <ScrollBar handleReset={handleReset} />
+    <ScrollBar handleReset={handleReset} handleRatings={handleRatings}/>
     <div className="main">
-      
-        
       
       {filter.map((show, index) => {
         return (
           <div className="main-card" key={index}>
             <img
               className="card-image"
-              src={`${
-                !show.image.original ? show.image.medium : show.image.original
-              }`}
+              src={show.image && show.image.original ? show.image.original : (show.image && show.image.medium ? show.image.medium : 'default-image-url')}
               alt={`${show.name} original banner`}
             />
             <Country country={show} filterCountry={setFilter} originalData={originalData}/>

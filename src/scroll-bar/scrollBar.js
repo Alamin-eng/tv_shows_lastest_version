@@ -1,15 +1,15 @@
 import "./scroll-bar.css";
 import ResetButton from "./reset-button/reset-button";
-export default function ScrollBar({ handleReset}) {
+import TopRated from "./top rated/topRated";
+
+export default function ScrollBar({ handleReset, handleRatings}) {
  
   return (
 
     <div className="scroll-bar">
       <ResetButton handleReset={handleReset} />
       {/* replace all the following buttons with todo list buttons */}
-      <ResetButton handleReset={handleReset} />
-      <ResetButton handleReset={handleReset} />
-      <ResetButton handleReset={handleReset} />
+      <TopRated handleRatings={handleRatings}/>
     </div>
   );
 }
