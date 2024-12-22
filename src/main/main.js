@@ -24,6 +24,16 @@ export default function Main() {
     });
     setFilter(ratings);
   };
+  // handle ratings bottom
+  function handleRatingsBottom() {
+    const ratings = [...data].sort((a, b) => {
+      if (a.rating && b.rating) {
+        return a.rating.average - b.rating.average;
+      }
+      return 0;
+    });
+    setFilter(ratings);
+  };
 // handle alphabetical
   function handleAlphabetical() {
     const alphabetical = [...data].sort((a, b) => {
@@ -37,7 +47,7 @@ export default function Main() {
   return (
     <div className="main-container">
    
-    <ScrollBar handleReset={handleReset} handleRatings={handleRatings} handleAlphabetical={handleAlphabetical}/>
+    <ScrollBar handleReset={handleReset} handleRatings={handleRatings} handleRatingsBottom={handleRatingsBottom} handleAlphabetical={handleAlphabetical}/>
     <div className="main">
       
       {filter.map((show, index) => {
