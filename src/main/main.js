@@ -24,11 +24,20 @@ export default function Main() {
     });
     setFilter(ratings);
   };
-
+// handle alphabetical
+  function handleAlphabetical() {
+    const alphabetical = [...data].sort((a, b) => {
+      if (a.name && b.name) {
+        return a.name.localeCompare(b.name);
+      }
+      return 0;
+    });
+    setFilter(alphabetical);
+  };
   return (
     <div className="main-container">
    
-    <ScrollBar handleReset={handleReset} handleRatings={handleRatings}/>
+    <ScrollBar handleReset={handleReset} handleRatings={handleRatings} handleAlphabetical={handleAlphabetical}/>
     <div className="main">
       
       {filter.map((show, index) => {

@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { FaSortNumericUpAlt} from "react-icons/fa";
 export default function TopRated ({handleRatings}) {
   return (
-    <button key={"reset"} className="top-rated" onClick={handleRatings}>
+    <button key={"top-rated"} className="top-rated" onClick={handleRatings}>
     {" "}
-    Ratings{" "}
+    Ratings {" "} <FaSortNumericUpAlt color='green'/>
   </button>
   );
 };
