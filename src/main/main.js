@@ -44,13 +44,41 @@ export default function Main() {
     });
     setFilter(alphabetical);
   };
+// handle alphabetical z-a
+function handleAlphabeticalZtoA() {
+  const alphabetical = [...data].sort((a, b) => {
+    if (a.name && b.name) {
+      return b.name.localeCompare(a.name);
+    }
+    return 0;
+  });
+  setFilter(alphabetical);
+};
+// handle type animation
+   function handleTypeAnimation() { 
+    const animations = data.filter(show => show.type && show.type.includes("Animation"));
+    setFilter(animations);
+   }
+// handle type reality  
+function handleTypeReality() { 
+  const reality = data.filter(show => show.type && show.type.includes("Reality"));
+  setFilter(reality);
+}
+// handle type talkshow
+function handleTypeTalkshow() { 
+  const talkShow = data.filter(show => show.type && show.type.includes("Talk Show"));
+  setFilter(talkShow);
+}
   return (
     <div className="main-container">
    
-    <ScrollBar handleReset={handleReset} handleRatings={handleRatings} handleRatingsBottom={handleRatingsBottom} handleAlphabetical={handleAlphabetical}/>
+    <ScrollBar handleReset={handleReset} handleRatings={handleRatings} handleRatingsBottom={handleRatingsBottom} handleAlphabetical={handleAlphabetical} handleAlphabeticalZtoA={handleAlphabeticalZtoA}
+    handleTypeAnimation={handleTypeAnimation} 
+    handleTypeReality={handleTypeReality}
+    handleTypeTalkshow={handleTypeTalkshow}/>
     <div className="main">
       
-      {filter.map((show, index) => {
+      {Array.isArray(filter) && filter.map((show, index) => {
         return (
           <div className="main-card" key={index}>
             <img
