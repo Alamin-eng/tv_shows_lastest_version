@@ -7,7 +7,8 @@ import AlphabeticalZtoA from "./alphabet z-a/alphabeticalZ-A";
 import TypeAnimation from "./type animation/type-animation";
 import TypeReality from "./type reality/type-reality";
 import TypeTalkshow from "./type talkshow/type-talkshow";
-export default function ScrollBar({ handleReset, handleRatings, handleRatingsBottom, handleAlphabetical,handleAlphabeticalZtoA, handleTypeAnimation, handleTypeReality, handleTypeTalkshow }) {
+import TypeScripted from "./type scripted/type-scripted";
+export default function ScrollBar({ handleReset, handleRatings, handleRatingsBottom, handleAlphabetical,handleAlphabeticalZtoA, handleTypeAnimation, handleTypeReality, handleTypeTalkshow, handleTypeScripted, scriptedLength }) {
  
   return (
 
@@ -21,6 +22,7 @@ export default function ScrollBar({ handleReset, handleRatings, handleRatingsBot
       <TypeAnimation handleTypeAnimation={handleTypeAnimation}/>
       <TypeReality handleTypeReality={handleTypeReality}/>
       <TypeTalkshow handleTypeTalkshow={handleTypeTalkshow}/> 
+      <TypeScripted handleTypeScripted={handleTypeScripted}/>
     </div>
   );
 }

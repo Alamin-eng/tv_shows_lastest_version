@@ -10,6 +10,7 @@ const data = require("../shows.json"); // code to fetch api data to replace thes
 export default function Main() {
   const [filter, setFilter] = useState(data);
   const [originalData] = useState(data);
+  
  // handle reset
   function handleReset() {
     setFilter(data);
@@ -69,13 +70,19 @@ function handleTypeTalkshow() {
   const talkShow = data.filter(show => show.type && show.type.includes("Talk Show"));
   setFilter(talkShow);
 }
+// handle type Scripted
+function handleTypeScripted() { 
+  const scripted = data.filter(show => show.type && show.type.includes("Scripted"));
+  setFilter(scripted);
+}
   return (
     <div className="main-container">
    
     <ScrollBar handleReset={handleReset} handleRatings={handleRatings} handleRatingsBottom={handleRatingsBottom} handleAlphabetical={handleAlphabetical} handleAlphabeticalZtoA={handleAlphabeticalZtoA}
     handleTypeAnimation={handleTypeAnimation} 
     handleTypeReality={handleTypeReality}
-    handleTypeTalkshow={handleTypeTalkshow}/>
+    handleTypeTalkshow={handleTypeTalkshow}
+    handleTypeScripted={handleTypeScripted} />
     <div className="main">
       
       {Array.isArray(filter) && filter.map((show, index) => {
