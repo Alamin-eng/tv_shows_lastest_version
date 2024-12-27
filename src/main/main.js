@@ -75,6 +75,11 @@ function handleTypeScripted() {
   const scripted = data.filter(show => show.type && show.type.includes("Scripted"));
   setFilter(scripted);
 }
+// handle type Documentary
+function handleTypeDocumentary() { 
+  const documentary = data.filter(show => show.type && show.type.includes("Documentary"));
+  setFilter(documentary);
+}
   return (
     <div className="main-container">
    
@@ -82,9 +87,10 @@ function handleTypeScripted() {
     handleTypeAnimation={handleTypeAnimation} 
     handleTypeReality={handleTypeReality}
     handleTypeTalkshow={handleTypeTalkshow}
-    handleTypeScripted={handleTypeScripted} />
+    handleTypeScripted={handleTypeScripted} 
+    handleTypeDocumentary={handleTypeDocumentary}/>
+
     <div className="main">
-      
       {Array.isArray(filter) && filter.map((show, index) => {
         return (
           <div className="main-card" key={index}>
