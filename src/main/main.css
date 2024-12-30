@@ -31,7 +31,7 @@
   border-radius: 20px;
   font-weight: bold;
   filter: drop-shadow(6px 5px 2px #0e2321);
-  z-index: 200;
+  z-index: 1;
 }
 .main-card::before{
   content: "";
@@ -39,7 +39,7 @@
   position:absolute;
   width: 100%;
   height: 100%;
-  z-index: .3;
+  z-index: .25;
   border-radius: 20px;
 }
 .card-image{
@@ -72,6 +72,6 @@
   width: max-content;
   font-size: calc(.95rem - .1rem);
   z-index: 1;
-  color:rgb(0, 220, 180)  
+  color:rgb(0, 220, 180); 
 }
 
