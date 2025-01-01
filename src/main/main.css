@@ -3,7 +3,7 @@
   --main-text: rgb(255, 255, 255);
   --main-network: rgba(135, 0, 20, 0.895);
   --inner-text-color: rgb(255, 255, 255);
-}
+} 
 .main-container{
   background:-webkit-repeating-radial-gradient(rgb(100, 0, 25), rgb(0, 138, 138) ,rgb(0, 145, 155), rgb(118, 0, 168));
   padding-top: 5px;
@@ -13,7 +13,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   padding: 5%;
-  gap: calc( 7px + 1px);
+  gap: calc( 8px + 1px);
 }
 .main-card:hover{
   transform: translate(0, -1px);
@@ -64,7 +64,7 @@
   display: flex;
   justify-content: space-between;
   margin: 2px 0;
-}
+} 
 .card-rating{
   display: flex;
   align-items: center;
