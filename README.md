@@ -36,7 +36,7 @@ LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/mohammad-a-846376220/)
 
 ```bash
 $ git clone ...       # clone this project to your local machine
-$ cd react-portfolio  # go to project folder
+$ cd tv_shows_lastest_version  # go to project folder
 $ npm install         # install dependencies
 $ npm run start       # run it locally
 ```
