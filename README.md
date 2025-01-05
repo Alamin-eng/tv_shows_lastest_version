@@ -25,28 +25,18 @@ Work with APIs to fetch and display data dynamically.
 
 Practice responsive web design to ensure the app is user-friendly across devices.
 
-### Installation and Setup
-Clone the repository:
-
-git clone https://github.com/Alamin-eng/tv_shows_lastest_version
-
-Navigate to the project directory:
-
-cd tv_shows_lastest_version
-
-Install dependencies:
-
-npm install
-
-Run the application:
-
-npm start
-
-The app will be live at http://localhost:3000.
-
 ### Contact
 If you have any feedback or would like to discuss this project, feel free to reach out:
 
 Email: mohammedalaminruben@gmail.com  
 
 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/mohammad-a-846376220/)
+
+## Getting Started
+
+```bash
+$ git clone ...       # clone this project to your local machine
+$ cd react-portfolio  # go to project folder
+$ npm install         # install dependencies
+$ npm run start       # run it locally
+```
