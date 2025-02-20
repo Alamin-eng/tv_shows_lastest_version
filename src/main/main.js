@@ -82,7 +82,6 @@ function handleTypeDocumentary() {
 }
   return (
     <div className="main-container">
-   
     <ScrollBar handleReset={handleReset} handleRatings={handleRatings} handleRatingsBottom={handleRatingsBottom} handleAlphabetical={handleAlphabetical} handleAlphabeticalZtoA={handleAlphabeticalZtoA}
     handleTypeAnimation={handleTypeAnimation} 
     handleTypeReality={handleTypeReality}

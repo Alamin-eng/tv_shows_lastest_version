@@ -1,5 +1,4 @@
 .scroll-bar{
-  
   padding: calc(2px + 1vh) calc(10px + 1vw);
   display: flex;
   justify-content: space-evenly;
@@ -8,8 +7,8 @@
 .scroll-bar>*{
   font-family: 'Getky trial';
   padding: 5px 10px;
-  outline:none;
-  background:linear-gradient(90deg, rgb(225, 135, 0), rgb(255, 193, 93));
+ 
+  
   box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.5);
   color: rgb(0, 86, 1);
   width: auto;
@@ -30,5 +29,4 @@
 .scroll-bar *{
   display: flex;
   align-items: center;
-  gap: 5px;
 }

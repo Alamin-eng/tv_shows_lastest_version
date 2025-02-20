@@ -3,7 +3,10 @@ import "./modal.css";
 export default function Shows_modal(){
   return(
     <div className="modal-container">
-      <div> header (Title & run time div's)</div>
+      <div> 
+      <div>Title</div>
+      <div>Run Time</div>
+      </div>
       <div>modal body
         <div>description</div>
         <div>Genre</div>
