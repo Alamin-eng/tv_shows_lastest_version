@@ -12,16 +12,15 @@ export default function Genre({ genre, setGenre, originalData }) {
   return (
     <div className="card-genre-container">
       {genre.genres &&
-       genre.genres.map((genre, index) => (
+        genre.genres.map((genre, index) => (
           <button
             key={index}
             className="card-genres"
-            onClick={(event) => handleGenre(event, genre)}>
+            onClick={(event) => handleGenre(event, genre)}
+          >
             {genre}
           </button>
         ))}
     </div>
   );
 }
-
-

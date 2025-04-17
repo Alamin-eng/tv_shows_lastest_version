@@ -12,12 +12,12 @@
   display: flex;
   justify-content:space-around;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 12px;
   max-width: fit-content;
   max-height: fit-content;
   padding: 3px 5px;
   margin: 1px 0;
-  font-size: calc(.75rem - .10rem);
+  font-size: calc(.75rem - .05rem);
   color:var(--inner-text-color);
   cursor: pointer;
 }
