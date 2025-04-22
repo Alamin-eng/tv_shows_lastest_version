@@ -4,7 +4,7 @@ export default function ResetButton({ handleReset}) {
   return (
     <button key={"reset"} className="reset-button" onClick={handleReset}>
     {" "}
-    Reset {" "} <FaSuperpowers color="green"/> 
+    Reset {" "} <FaSuperpowers color="orange"/> 
   </button>
   );
 }
