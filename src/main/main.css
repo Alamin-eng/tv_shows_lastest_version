@@ -23,14 +23,13 @@
 .main-card{
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   background-color: rgb(27, 28, 34);
   max-width: 200px;
   max-height: 350px;
   border-radius: 20px;
   font-weight: bold;
-  filter: drop-shadow(6px 5px 2px #0e2321);
+  filter: drop-shadow(6px 5px 2px #102725);
   z-index: 1;
 }
 .main-card::before{
