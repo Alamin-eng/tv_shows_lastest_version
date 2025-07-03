@@ -54,8 +54,7 @@
   padding: 0 15px;
   color: var(--main-text);
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   
 }
