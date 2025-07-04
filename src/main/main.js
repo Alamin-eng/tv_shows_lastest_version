@@ -5,6 +5,7 @@ import Genre from "./genre/genre";
 import Network from "./network/network";
 import Country from "./country/country";
 import ScrollBar from "../scroll-bar/scrollBar";
+
 const data = require("../shows.json"); // code to fetch api data to replace these static json data
 
 export default function Main() {
