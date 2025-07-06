@@ -12,7 +12,7 @@
   background-blend-mode: soft-light;
 }
 .fade {
-  animation: fade 25s infinite;
+  animation: fade .3s infinite;
   transition: ease;
 }
 
