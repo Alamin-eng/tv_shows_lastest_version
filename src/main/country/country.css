@@ -1,5 +1,5 @@
 .card-country{
-  background-color: rgba(65, 81, 168, 0.922);
+  background-color: rgba(71, 87, 181, 0.922);
   width:fit-content;
   padding: 4px 7px;
   font-size: .75rem;
@@ -11,7 +11,7 @@
   right: 0;
   outline: none;
   border:none;
-  border-left: 1px solid rgba(143, 95, 255, 0.922);
+  border-left: 1px solid rgba(150, 105, 255, 0.922);
   border-right: 1px solid rgba(148, 102, 255, 0.722);
   cursor: pointer;
 }
