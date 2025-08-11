@@ -7,11 +7,11 @@
   color: rgb(159, 228, 255);
   font-weight:bold;
   position: absolute;
-  bottom: 1px;
+  bottom: 2px;
   right: 0;
   outline: none;
   border:none;
   border-left: 1px solid rgba(150, 105, 255, 0.922);
   border-right: 1px solid rgba(148, 102, 255, 0.722);
-  cursor:pointer;
+  cursor:auto;
 }
