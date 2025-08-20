@@ -1,13 +1,13 @@
 .card-country{
   background-color: rgba(71, 87, 181, 0.922);
   width:fit-content;
-  padding: 4px 7px;
+  padding: 4px 6px;
   font-size: .75rem;
   border-radius: 15px 0 15px 0;
   color: rgb(159, 228, 255);
   font-weight:bold;
   position: absolute;
-  bottom: 2px;
+  bottom: 1px;
   right: 0;
   outline: none;
   border:none;
