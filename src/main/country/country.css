@@ -14,4 +14,5 @@
   border-left: 1px solid rgba(150, 105, 255, 0.922);
   border-right: 1px solid rgba(148, 102, 255, 0.722);
   cursor:pointer;
+  z-index: 1;
 }
