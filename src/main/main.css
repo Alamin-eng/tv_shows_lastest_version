@@ -20,17 +20,17 @@
   filter: drop-shadow(-4px -4px 2px #0e2321) contrast(103%) brightness(102%) saturate(1.5);
 }
 .main-card{
-  position: relative;
-  display: flex;
-  flex-flow: wrap;
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
   background-color: rgb(27, 28, 34);
-  padding: .5rem;
+  padding: 0 0 .4rem 0;
   gap: 1rem;
   border-radius: 20px;
   font-weight: bold;
   filter: drop-shadow(6px 5px 2px #102725);
   z-index: 1;
-  overflow: hidden
+  overflow: hidden;
 }
 .main-card::before{
   content: "";
@@ -51,12 +51,12 @@
   border-radius: 20px 20px 0 0; */
   position: relative;
   top:0;
-  flex: 1 1 clamp(150px, 40%, 250px); /* fluid image size */
   border-radius: 20px 20px 0 0;
-  width: 100%;       /* scale to fit grid cell */
-  height: auto;      /* keep aspect ratio */
-  object-fit: cover;
+  width: 100%;
+  height: auto;  
+  object-fit: contain;
 }
+
 .main-texts{
   padding: 0 15px;
   color: var(--main-text);
