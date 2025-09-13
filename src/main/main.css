@@ -10,10 +10,9 @@
 }
 .main{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  padding: 5%;
-  gap: calc( 8px + 1px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(8px, 2vw, 20px);  /* scales with viewport */
+  padding: clamp(10px, 5%, 35px);
 }
 .main-card:hover{
   transform: translate(0, -1px);
