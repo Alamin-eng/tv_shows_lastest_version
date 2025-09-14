@@ -4,7 +4,7 @@ export default function AlphabeticalZtoA ({handleAlphabeticalZtoA}) {
   return (
     <button key={"alphabetical-za"} className="alphabetical-za" onClick={handleAlphabeticalZtoA}>
     {" "}
-    Alphabetical{" "}  <FaSortAlphaDownAlt color='green'/>
+    <FaSortAlphaDownAlt color='green'/>
   </button>
   );
 };

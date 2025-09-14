@@ -4,7 +4,7 @@ export default function Alphabetical ({handleAlphabetical}) {
   return (
     <button key={"alphabetical-az"} className="alphabetical-az" onClick={handleAlphabetical}>
     {" "}
-    Alphabetical{" "}  <FaSortAlphaUp color='green'/>
+    <FaSortAlphaUp color='green'/>
   </button>
   );
 };
