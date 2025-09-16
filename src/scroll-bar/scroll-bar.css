@@ -18,7 +18,8 @@
   border-radius: 12px;
   border: none;
   font-weight: 600;
-  font-size: calc(0.7rem, 2vw, 0.9rem); 
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+
   height: calc(18px + 1vh);
 
   flex: 1 1 auto;    /*flex-grow, flex-shrink, and flex-basis in one shorthand*/       
