@@ -102,21 +102,29 @@ function handleTypeDocumentary() {
             <Country country={show} filterCountry={setFilter} originalData={originalData}/>
 
             <div className="main-texts">
-              <div className="name-and-rating-container">
-                <div className="card-name">{show.name && show.name}</div>
+            <div className="card-name">{show.name && show.name}</div>
+              <div className="year-and-rating-container">
+                
+                <div className="card-year">{show.premiered && show.premiered.split("-")[0]}</div>
                 <div className="card-rating">
+                  
                   <FaStar color="orange" fillOpacity={1} />{" "}
-                  <div>{show.rating && show.rating.average % 1 === 0 ? show.rating.average + ".0" : show.rating.average}</div>
+                  <div>{show.rating && show.rating.average % 1 === 0 ? show.rating.average + ".0" : show.rating.average} 
+                  </div>
                 </div>
+                
               </div>
               
               <Genre genre={show} setGenre={setFilter} originalData={originalData}/>
 
               <Network show={show} fileterNetwork={setFilter} originalData={originalData}/>
+              
             </div>
+            
           </div>
         );
       })}{" "}
+      
     </div>
     </div>
   );
