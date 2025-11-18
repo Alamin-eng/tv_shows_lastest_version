@@ -77,13 +77,13 @@
   padding: 0 1rem;
   font-size: 1.1rem;
   font-weight: bold;
-  max-width: 200px;
+  max-width: 190px;
   width: 100%;
 } 
 .card-rating, .card-year{
   display: flex;
   align-items: center;
-  gap:  4px;
+  gap: 4px;
   width: max-content;
   font-size: calc(.9rem - .1rem);
   z-index: 1;
@@ -95,7 +95,6 @@
   .main-card {
     flex-direction: row;
     align-items: center;
-   
     height: auto;
     
   }
